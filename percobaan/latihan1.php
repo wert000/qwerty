@@ -16,13 +16,21 @@
       <th>#</th>
       <th>Gambar</th>
       <th>Nama</th>
+      <th>NRP</th>
       <th>Email</th>
       <th>Jurusan</th>
       <th>Aksi</th>
     </tr>
     <tr>
       <td>1</td>
-      <td><img src=""></td>
+      <td><img src="img/bar.jpg" width="100"></td>
+      <td>Jali Jackson</td>
+      <td>045895462</td>
+      <td>jalijakson@gmail.com</td>
+      <td>Teknik Informatika</td>
+      <td>
+        <a href="">ubah</a> | <a href="">hapus</a>
+      </td>
     </tr>
   </table>
 </body>
