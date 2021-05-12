@@ -2,11 +2,10 @@
 require 'function.php';
 
 // ambil id dari url
-
 $id = $_GET['id'];
 
-$mahasiswa = query("SELECT * FROM mahasiswa WHERE id=$id");
-
+// query mahasiswa berdasarkan id
+$m = query("SELECT * FROM mahasiswa WHERE id = $id");
 ?>
 
 
@@ -24,8 +23,14 @@ $mahasiswa = query("SELECT * FROM mahasiswa WHERE id=$id");
   <h3>Detail Mahasiswa</h3>
   <ul>
     <li>
-      <img src="">
+      <img src="img/<?= $m['gambar']; ?>" width="200">
     </li>
+    <li>NRP :<?= $m['nrp']; ?></li>
+    <li>Nama : <?= $m['nama']; ?></li>
+    <li>Email : <?= $m['email']; ?></li>
+    <li>Jurusan : <?= $m['jurusan']; ?></li>
+    <li><a href="">ubah</a> | <a href="">hapus</a></li>
+    <li><a href="latihan3.php">Kembali ke daftar mahasiswa</a></li>
   </ul>
 
 </body>

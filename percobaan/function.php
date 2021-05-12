@@ -11,6 +11,12 @@ function query($query)
   // query isi table mahasiswa
   $result = mysqli_query($conn, $query);
 
+  // jika hasilnya hanya satu data
+  if (mysqli_num_rows($result) == 1) {
+    return mysqli_fetch_assoc($result);
+  }
+
+
   // ubah data ke dalam array
   // $row = mysqli_fetch_row($result); //array numerik
   // $row = mysqli_fetch_assoc($result); //array associative
